@@ -1,0 +1,95 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+}
+
+table {
+}
+
+fieldset,
+img,
+abbr {
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+}
+
+ul li {
+}
+
+caption,
+th {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
+sup {
+}
+
+sub {
+}
+
+input,
+textarea,
+select {
+}
+
+legend {
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+}
+
+img {
+}
+
+a {
+}
+
+* {
+}
