@@ -115,3 +115,20 @@ a {
 * {
   box-sizing: border-box;
 }
+
+header {
+  background-color: #685ed6;
+}
+
+.main {
+  background-color: #ffffff;
+}
+
+.logo__img {
+  width: 86px;
+  height: 32px;
+}
+
+.footer {
+  background-color: #685ed6;
+}
