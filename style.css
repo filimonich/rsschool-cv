@@ -136,6 +136,14 @@ header {
   background-color: #685ed60d;
 }
 
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  max-width: 1110px;
+  width: 95%;
+  margin: 0 auto;
+}
+
 .menu__list {
   display: flex;
   justify-content: space-around;
@@ -160,12 +168,23 @@ header {
 }
 
 .main {
+  display: flex;
   background-color: #ffffff;
 }
 
 .logo__img {
   width: 86px;
   height: 32px;
+}
+
+.main__pic {
+  padding: 5px;
+  background-color: #2B478B;
+}
+
+.main__img {
+  display: block;
+  border-radius: 20px;
 }
 
 .footer {
