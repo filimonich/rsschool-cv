@@ -116,6 +116,18 @@ a {
   box-sizing: border-box;
 }
 
+body, html {
+  box-sizing: border-box;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: Verdana, sans-serif, Georgia;
+  background-color: #fff;
+  color: #1d2530;
+  display: flex;
+}
+
 header {
   background-color: #685ed60d;
 }
