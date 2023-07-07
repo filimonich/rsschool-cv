@@ -117,7 +117,31 @@ a {
 }
 
 header {
-  background-color: #685ed6;
+  background-color: #685ed60d;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu__item {
+
+}
+
+.menu__link {
+  color: #1d2530;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 60px;
+  white-space: nowrap;
+  transition: color .1s ease-out, text-shadow .9s ease-out;
+}
+
+.menu__link:hover {
+  color: #685ed6;
+  text-shadow: 0.1px 0.1px 20px #685ed6;
 }
 
 .main {
