@@ -116,7 +116,8 @@ a {
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   position: relative;
   box-sizing: border-box;
   flex-flow: column nowrap;
@@ -141,7 +142,6 @@ header {
 }
 
 .menu__item {
-
 }
 
 .menu__link {
@@ -151,7 +151,7 @@ header {
   line-height: 60px;
   white-space: nowrap;
   color: #1d2530;
-  transition: color .1s ease-out, text-shadow .9s ease-out;
+  transition: color 0.1s ease-out, text-shadow 0.9s ease-out;
 }
 
 .menu__link:hover {
@@ -169,5 +169,22 @@ header {
 }
 
 .footer {
-  background-color: #685ed6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #3c4c62;
+  color: #d9dbe1;
+}
+
+.footer__link {
+  font-size: 20px;
+  font-family: sans-serif;
+  white-space: nowrap;
+  color: #f4f5f7;
+}
+
+.footer__link:hover {
+  color: #33AFE1;
+  text-decoration: underline;
 }
