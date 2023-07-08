@@ -196,8 +196,8 @@ header {
   position: absolute;
   background-color: #1d2530;
   width: 40%;
-  height: 100vh;
-  z-index: -10; 
+  height: 97vh;
+  z-index: -10;
 }
 
 .main__right {
