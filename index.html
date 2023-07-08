@@ -1,45 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="/images/logo-SF.svg" />
+  <link rel="icon" type="image/png" href="images/svg/logo-SF.svg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Sergei Filimonov</title>
 </head>
 
-<body>
+<body class="wrapper">
   <header class="header">
     <nav class="menu">
       <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link" href="#about-me">About Me</a></li>
         <li class="menu__item"><a class="menu__link" href="#contacts">Contacts</a></li>
-        <li class="menu__item"><a class="menu__link" href="#about-Me">About Me</a></li>
         <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
         <li class="menu__item"><a class="menu__link" href="#code">Code</a></li>
         <li class="menu__item"><a class="menu__link" href="#education">Education</a></li>
+        <li class="menu__item"><a class="menu__link" href="#language">Language</a></li>
         <li class="menu__item"><a class="menu__link" href="#projects">My projects</a></li>
-        <li class="menu__item"><a class="menu__link" href="#English">English</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
     <div class="main__left">
-      <div class="hero__title">
-        <h1 class="hero__headline">Sergei Filimonov</h1>
+      <div class="main__pic">
+        <img src="images/img/photo.jpeg" alt="Profile photo" class="main__img">
       </div>
-      <div class="main__contents">
-        <div class="main__content"></div>
-        <div class="main__content"></div>
-      </div>
+      <ul class="main__contents">
+        <li class="main__content">
+          <h2 class="main__headline headline-left-before" id="about-me">about me</h2>
+          <div class="main__block">
+            <p>
+              Started learning the basics of layout and programming in 2021. There were difficulties with understanding
+              JavaScript. At that point, I decided to take a break to see if I needed to do it. At the end of 2022, I
+              thought I would continue to study. In 2023, I participated in a project, doing layout and a bit of
+              JavaScript. At the moment I’m studying Vue.js, making projects for my portfolio.
+            </p>
+          </div>
+        </li>
+        <li class="main__content">
+          <h2 class="main__headline headline-left-before" id="skills">skills</h2>
+          <div class="main__block">
+            <ul class="main__lists">
+              <li class="main__list"><span>JavaScript</span></li>
+              <li class="main__list"><span>HTML, BEM</span></li>
+              <li class="main__list"><span>CSS3, SASS</span></li>
+              <li class="main__list"><span>Tailwind</span></li>
+              <li class="main__list"><span>Figma</span></li>
+              <li class="main__list"><span>NPM, Gulp, Parcel, Vite</span></li>
+              <li class="main__list"><span>Git / GitHub</span></li>
+              <li class="main__list"><span>Netlify</span></li>
+              <li class="main__list"><span>git Bash</span></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </div>
-    <div class="main__right">
+    <div class="main__right main-right">
+      <div class="main-right__title">
+        <h1 class="main-right__caption">Sergei Filimonov</h1>
+        <ul class="main__contents">
+          <li class="main__content">
+            <div class="main-right__headlines">
+              <h2 class="main__headline main-right__headline headline-right-before" id="contacts">contacts</h2>
+              <h2 class="main__headline main-right__headline headline-right-before">front-end developer</h2>
+            </div>
+            <div class="main__block">
+              <ul class="main__lists">
+                <li class="main__list color-text"><span>Location: Tula, Russia</span></li>
+                <li class="main__list color-text"><span>Phone: +7 (953) 432-69-66</span></li>
+                <li class="main__list color-text"><span>Email:
+                    <a href="https://t.me/FILIMONOFF" target="_blank">@FILIMONOFF</a>
+                  </span></li>
+                <li class="main__list color-text"><span>Discord:
+                    <a href="https://discord.com/users/417619362388770816" target="_blank">.filimonoff</a>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main__content">
+            <h2 class="main__headline main-right__headline headline-right-before" id="code">code example</h2>
+            <div class="main__block">
+              <pre><code>function squareSum(numbers) {<br>return numbers.reduce((sum, num) => sum + num * num, 0);<br>}<br>console.log(squareSum([1, 2]));</code></pre>
+            </div>
+          </li>
+          <li class="main__content">
+            <h2 class="main__headline main-right__headline headline-right-before" id="education">education</h2>
+            <div class="main__block">
+              <ul class="main__lists">
+                <li class="main__list color-text"><span>The Web Developer profession:
+                    <a href="https://loftschool.com/" target="_blank">Loftschool</a>
+                  </span></li>
+                <li class="main__list color-text"><span>Learning JavaScript:
+                    <a href="https://www.udemy.com/course/the-complete-javascript-course/" target="_blank">The Complete
+                      JavaScript Course 2023</a>
+                  </span></li>
+                <li class="main__list color-text"><span>Learning layout (mostly grid), JavaScript, Vue.js:
+                    <a href="https://www.youtube.com/user/dmitrylavr" target="_blank">@dmitrylavrik</a>
+                  </span></li>
+              </ul>
+            </div>
+          </li>
+          <li class="main__content">
+            <h2 class="main__headline main-right__headline headline-right-before" id="language">language</h2>
+            <div class="main__block">
+              <ul class="main__lists">
+                <li class="main__list color-text"><span>English: A1 - Beginner</span></li>
+                <li class="main__list color-text"><span>Russian: Native language</span></li>
+              </ul>
+            </div>
+          </li>
+          <li class="main__content">
+            <h2 class="main__headline main-right__headline headline-right-before" id="projects">my projects</h2>
+            <div class="main__block">
+              <ul class="main__lists">
+                <li class="main__list color-text"><span>
+                  <a href="https://filimonich.github.io/air-asia/" target="_blank">Air Asia</a>
+                </span></li>
+                <li class="main__list color-text"><span>
+                  <a href="https://github.com/filimonich/project_october" target="_blank">Beats Solo 3</a>
+                </span></li>
+                <li class="main__list color-text"><span>
+                  <a href="https://ffproject.netlify.app/" target="_blank">Recipes</a>
+                </span></li>
+                <li class="main__list color-text"><span>
+                  <a href="https://filimonich.github.io/tocha-telegram/" target="_blank">Tocha Telegram</a>
+                </span></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
       <div class="main__contents">
-        <div class="main__content"></div>
-        <div class="main__content"></div>
-        <div class="main__content"></div>
         <div class="main__content"></div>
         <div class="main__content"></div>
       </div>
@@ -47,12 +147,12 @@
   </main>
 
   <footer class="footer">
-    <a href="https://github.com/petr9ra" target="_blank">
-      My GitHub
+    <a class="footer__link" href="https://github.com/filimonich" target="_blank">
+      <p>My GitHub</p>
     </a>
     <p>2023</p>
     <a class="logo" href="https://rs.school/js-stage0/" target="_blank">
-      <img class="logo__img" src="/images/rs_school_js.svg" alt="RS School">
+      <img class="logo__img" src="images/svg/rs_school_js.svg" alt="RS School">
     </a>
   </footer>
 
