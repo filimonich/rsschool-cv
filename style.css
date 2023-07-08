@@ -114,7 +114,7 @@ a {
 
 pre {
   white-space: pre-wrap;
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font-family: Consolas, Monaco, "Andale Mono", monospace;
 }
 
 code {
@@ -127,18 +127,18 @@ code {
 
 body,
 html {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
   box-sizing: border-box;
   flex-flow: column nowrap;
+  position: relative;
   width: 100%;
-  height: 100%;
   min-height: 100vh;
   font-size: 16px;
   line-height: 1.2;
   font-family: Verdana, sans-serif, Georgia;
   background-color: #fff;
   color: #1d2530;
-  display: flex;
 }
 
 header {
@@ -147,7 +147,6 @@ header {
 
 .wrapper {
   position: relative;
-  min-height: 100%;
   max-width: 1110px;
   width: 95%;
   margin: 0 auto;
@@ -156,9 +155,6 @@ header {
 .menu__list {
   display: flex;
   justify-content: space-around;
-}
-
-.menu__item {
 }
 
 .menu__link {
@@ -179,6 +175,7 @@ header {
 .main {
   display: flex;
   background-color: #ffffff;
+  margin-bottom: auto;
 }
 
 .logo__img {
@@ -190,10 +187,22 @@ header {
   width: 40%;
   background-color: #1d2530;
   color: #fff;
+  z-index: 1;
+}
+
+.main__left::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #1d2530;
+  width: 40%;
+  height: 100vh;
+  z-index: -10; 
 }
 
 .main__right {
   width: 60%;
+  z-index: 99;
 }
 
 .main__block {
@@ -223,7 +232,6 @@ header {
   display: block;
   border-radius: 20px;
   width: 100%;
-  /* height: 200px; */
 }
 
 .main__headline {
@@ -295,6 +303,7 @@ header {
   padding: 20px;
   background-color: #3c4c62;
   color: #d9dbe1;
+  z-index: 1;
 }
 
 .footer__link {
@@ -309,7 +318,8 @@ header {
   text-decoration: underline;
 }
 
-.color-text span, a {
+.color-text span,
+a {
   color: #1d2530;
 }
 
