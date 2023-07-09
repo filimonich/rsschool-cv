@@ -184,6 +184,7 @@ header {
 }
 
 .main__left {
+  position: relative;
   width: 40%;
   background-color: #1d2530;
   color: #fff;
@@ -194,9 +195,9 @@ header {
   content: "";
   display: block;
   position: absolute;
+  width: 100%;
+  height: calc(100vh - 8%);
   background-color: #1d2530;
-  width: 40%;
-  height: 97vh;
   z-index: -10;
 }
 
