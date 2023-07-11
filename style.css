@@ -1,0 +1,329 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-family: Consolas, Monaco, "Andale Mono", monospace;
+}
+
+code {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-flow: column nowrap;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: Verdana, sans-serif, Georgia;
+  background-color: #fff;
+  color: #1d2530;
+}
+
+header {
+  background-color: #685ed60d;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1110px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 60px;
+  white-space: nowrap;
+  color: #1d2530;
+  transition: color 0.1s ease-out, text-shadow 0.9s ease-out;
+}
+
+.menu__link:hover {
+  color: #685ed6;
+  text-shadow: 0.1px 0.1px 20px #685ed6;
+}
+
+.main {
+  display: flex;
+  background-color: #ffffff;
+  margin-bottom: auto;
+}
+
+.logo__img {
+  width: 86px;
+  height: 32px;
+}
+
+.main__left {
+  position: relative;
+  width: 40%;
+  background-color: #1d2530;
+  color: #fff;
+  z-index: 1;
+}
+
+.main__left::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 8%);
+  background-color: #1d2530;
+  z-index: -10;
+}
+
+.main__right {
+  width: 60%;
+  z-index: 99;
+}
+
+.main__block {
+  padding: 30px;
+}
+
+.main__lists {
+  padding-left: 20px;
+  color: #7f76dc;
+}
+
+.main__list {
+  list-style-type: disc;
+  padding: 2px;
+}
+.main__list span {
+  color: #fff;
+}
+
+.main__pic {
+  padding: 5px;
+  margin-bottom: 40px;
+  background-color: #7f76dc;
+}
+
+.main__img {
+  display: block;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.main__headline {
+  position: relative;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  font-family: Verdana;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1.2px;
+  color: #fff;
+  background-color: #7f76dc;
+  text-align: right;
+}
+
+.headline-left-before::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  background-color: #33afe1;
+}
+
+.main-right__caption {
+  padding: 80px 20px;
+  text-align: center;
+  font-family: Arial;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.72px;
+  color: #343434;
+}
+
+.main-right__headlines {
+  display: flex;
+  position: relative;
+}
+
+.headline-right-before::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  background-color: #33afe1;
+}
+
+.main-right__headline {
+  text-align: left;
+  width: 100%;
+}
+
+.main-right__headline:first-child {
+  background-color: #685ed60d;
+  color: #1d2530;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #3c4c62;
+  color: #d9dbe1;
+  z-index: 1;
+}
+
+.footer__link {
+  font-size: 20px;
+  font-family: sans-serif;
+  white-space: nowrap;
+  color: #f4f5f7;
+}
+
+.footer__link:hover {
+  color: #33afe1;
+  text-decoration: underline;
+}
+
+.color-text span,
+a {
+  color: #1d2530;
+}
+
+.color-text a {
+  color: #33afe1;
+}
